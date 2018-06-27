@@ -212,6 +212,7 @@ void setup()
     xmcPulseSwitch5.interval(100);
     xmcPulseSwitch5.attach(XMC_SWITCH_F5);
 
+    /* Run led. */
     pinMode(PB1, OUTPUT);
 
     /* Init timers. */
@@ -233,6 +234,7 @@ void loop()
 {
     int8_t Delta = 0;
 
+    /* Update bounce for switches. */
     xmcPulseSwitchPushButton.update();
     xmcPulseSwitchPower.update();
     xmcPulseSwitch0.update();
@@ -242,6 +244,7 @@ void loop()
     xmcPulseSwitch4.update();
     xmcPulseSwitch5.update();
 
+    /* Check for status change of switches and generate event is required. */
     if (xmcPulseSwitchPower.rose() == true)
     {
         xmcPushButtonEvent.Button = button_power;
@@ -284,10 +287,12 @@ void loop()
         send_event(xmcPushButtonEvent);
     }
 
+    /* Timer update events. */
     XmcUpdate3Sec();
     xmcUpdate100msec();
     xmcUpdate500msec();
 
+    /* Pulse switch handling. */
     if (xmcPulseSwitchPushButton.fell() == true)
     {
         xmcTimerPulseSwitchPushButton = millis();
@@ -340,5 +345,6 @@ void loop()
         }
     }
 
+    /* Kick XpNet module. */
     send_event(xmcXpNetUpdate);
 }
