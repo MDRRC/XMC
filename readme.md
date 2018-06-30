@@ -6,6 +6,6 @@ The user interface is nearly the same as with the WMC application and it's tried
 
 Below the development setup.
 
-https://github.com/MDRRC/XMC/blob/master/xmc.jpg
+![](https://github.com/MDRRC/XMC/blob/master/xmc.jpg)
 
 More info will follow soon! 
