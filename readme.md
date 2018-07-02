@@ -1,4 +1,4 @@
-#Xpressnet Manual Control
+# Xpressnet Manual Control
 
 The XpressNet Manual Control (Xmc) is manual control for the [XPressnet bus](www.lenzusa.com/1newsite1/Manuals/xpressnet.pdf) based on 
 
