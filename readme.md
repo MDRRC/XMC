@@ -24,7 +24,7 @@ The user interface is nearly the same as with the WMC application and it's tried
  * [XpressNet](https://github.com/MDRRC/XpressNet) for XpressNet protocol.
  * [Bounce2](https://github.com/thomasfredericks/Bounce2) for debouncing switches.
 Bounce requires an update for use in the XMC application, add the include and replace the attach function with code below
-...
+```c
 #include "app_cfg.h"
  
  void Bounce::attach(int pin, int mode){
@@ -35,7 +35,7 @@ Bounce requires an update for use in the XMC application, add the include and re
 #endif
   this->attach(pin);
 }
-...
+```
  * [Adafruit-ST7735-Library](https://github.com/adafruit/Adafruit-ST7735-Library) to control the display.
  * [WmcTft](https://github.com/MDRRC/WmcTft) for graphics within the Wmc application.
  * [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) for graphic control of the display.
@@ -43,6 +43,5 @@ Bounce requires an update for use in the XMC application, add the include and re
  * [WmcCv](https://github.com/MDRRC/WmcCv) for changing CV's.
  * [WmcCli](https://github.com/MDRRC/WmcCli) for the command line interface over the USB serial port.
  * [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32) 
-
 
 More info will follow soon!    
