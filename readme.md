@@ -16,11 +16,11 @@ The user interface is nearly the same as with the WMC application and it's tried
  * [Roco MultiMaus as master](https://www.roco.cc/en/product/5215-multimaus-0-0-0-0-0-004001-0/products.html) To be tested
  
 ## Schematic
-The [schematic](https://github.com/MDRRC/XMC/blob/master/xmc_schematic.pdf) of the XMC.
+The [schematic](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_schematic.pdf) of the XMC.
 
 ## Below the development setup.
 
-![](https://github.com/MDRRC/XMC/blob/master/xmc.jpg)
+![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc.jpg)
 
 ## Used librarys
  * [XmcApp]() the main state machine of the application.
