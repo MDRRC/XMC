@@ -5,6 +5,7 @@ The XpressNet Manual Control (Xmc) is manual control for the [XPressnet bus](www
  * a [Maple Mini STM32 board](https://www.leaflabs.com/maple/) variant from China
  * RS485 driver IC
  * AT24C256 memeory IC for storage of settings and locdata.
+ * 128*128 pixel ST7735 LCD. 
  * Switches for controlling functions. 
  * Pulse switch for setting speed.
  
@@ -14,6 +15,9 @@ The user interface is nearly the same as with the WMC application and it's tried
  * [MDRRC-II](http://members.home.nl/robert.evers/mdrrc2.htm) OK
  * [Roco MultiMaus as master](https://www.roco.cc/en/product/5215-multimaus-0-0-0-0-0-004001-0/products.html) To be tested
  
+## Schematic
+The [schematic](https://github.com/MDRRC/XMC/blob/master/xmc_schematic.pdf) of the XMC.
+
 ## Below the development setup.
 
 ![](https://github.com/MDRRC/XMC/blob/master/xmc.jpg)
@@ -27,12 +31,13 @@ Bounce requires an update for use in the XMC application, add the include and re
 ```c
 #include "app_cfg.h"
  
- void Bounce::attach(int pin, int mode){
-#ifdef MCU_STM32F103RB
+void Bounce::attach(int pin, int mode)
+{
+  #ifdef MCU_STM32F103RB
   pinMode(pin, (WiringPinMode)(mode));
-#else
+  #else
   pinMode(pin, mode);
-#endif
+  #endif
   this->attach(pin);
 }
 ```
