@@ -16,7 +16,11 @@
 /***********************************************************************************************************************
    E X P O R T E D   S Y M B O L   D E F I N I T I O N S (defines, typedefs)
  **********************************************************************************************************************/
-#define XMC_3SEC_TIMEOUT 3000
+#define XMC_TIMEOUT_100MS 100
+#define XMC_TIMEOUT_500MS 500
+#define XMC_TIMEOUT_3SEC 3000
+
+#define XMC_PULSE_SWITCH_CHECK_TIMEOUT 150
 #define XMC_ENCODER_PIN_A PA2
 #define XMC_ENCODER_PIN_B PA3
 #define XMC_ENCODER_PIN_PB PA1
@@ -72,7 +76,7 @@ uint8_t Runled                    = 0;
  */
 static void XmcUpdate3Sec(void)
 {
-    if (millis() - xmcTimerMsec3Sec > XMC_3SEC_TIMEOUT)
+    if (millis() - xmcTimerMsec3Sec > XMC_TIMEOUT_3SEC)
     {
         xmcTimerMsec3Sec = millis();
         send_event(xmcUpdateEvent3Sec);
@@ -83,7 +87,7 @@ static void XmcUpdate3Sec(void)
  */
 static void xmcUpdate100msec(void)
 {
-    if (millis() - xmcTimer100msec >= 100)
+    if (millis() - xmcTimer100msec >= XMC_TIMEOUT_100MS)
     {
         xmcTimer100msec = millis();
         send_event(xmcUpdateEvent100msec);
@@ -94,7 +98,7 @@ static void xmcUpdate100msec(void)
  */
 static void xmcUpdate500msec(void)
 {
-    if (millis() - xmcTimer500msec >= 500)
+    if (millis() - xmcTimer500msec >= XMC_TIMEOUT_500MS)
     {
         xmcTimer500msec = millis();
         send_event(xmcUpdateEvent500msec);
@@ -322,7 +326,7 @@ void loop()
             turnedWhilePressed = false;
         }
     }
-    else if ((millis() - xmcTimerPulseSwitch) > 75)
+    else if ((millis() - xmcTimerPulseSwitch) > XMC_PULSE_SWITCH_CHECK_TIMEOUT)
     {
         /* Update pulse switch turn events if turned.*/
         xmcTimerPulseSwitch = millis();
