@@ -20,18 +20,18 @@
 #define XMC_TIMEOUT_500MS 500
 #define XMC_TIMEOUT_3SEC 3000
 
-#define XMC_PULSE_SWITCH_CHECK_TIMEOUT 150
+#define XMC_PULSE_SWITCH_CHECK_TIMEOUT 100
 #define XMC_ENCODER_PIN_A PA2
 #define XMC_ENCODER_PIN_B PA3
 #define XMC_ENCODER_PIN_PB PA1
 
 #define XMC_SWITCH_POWER PC13
-#define XMC_SWITCH_F0 PC14
-#define XMC_SWITCH_F1 PC15
-#define XMC_SWITCH_F2 PA0
-#define XMC_SWITCH_F3 PA5
-#define XMC_SWITCH_F4 PA6
-#define XMC_SWITCH_F5 PA7
+#define XMC_SWITCH_0 PC15
+#define XMC_SWITCH_1 PB4
+#define XMC_SWITCH_2 PA6
+#define XMC_SWITCH_3 PA10
+#define XMC_SWITCH_4 PA7
+#define XMC_SWITCH_5 PA9
 
 /***********************************************************************************************************************
    D A T A   D E C L A R A T I O N S (exported, local)
@@ -192,29 +192,29 @@ void setup()
     xmcPulseSwitchPower.interval(100);
     xmcPulseSwitchPower.attach(XMC_SWITCH_POWER);
 
-    pinMode(XMC_SWITCH_F0, INPUT_PULLUP);
+    pinMode(XMC_SWITCH_0, INPUT_PULLUP);
     xmcPulseSwitch0.interval(100);
-    xmcPulseSwitch0.attach(XMC_SWITCH_F0);
+    xmcPulseSwitch0.attach(XMC_SWITCH_0);
 
-    pinMode(XMC_SWITCH_F1, INPUT_PULLUP);
+    pinMode(XMC_SWITCH_1, INPUT_PULLUP);
     xmcPulseSwitch1.interval(100);
-    xmcPulseSwitch1.attach(XMC_SWITCH_F1);
+    xmcPulseSwitch1.attach(XMC_SWITCH_1);
 
-    pinMode(XMC_SWITCH_F2, INPUT_PULLUP);
+    pinMode(XMC_SWITCH_2, INPUT_PULLUP);
     xmcPulseSwitch2.interval(100);
-    xmcPulseSwitch2.attach(XMC_SWITCH_F2);
+    xmcPulseSwitch2.attach(XMC_SWITCH_2);
 
-    pinMode(XMC_SWITCH_F3, INPUT_PULLUP);
+    pinMode(XMC_SWITCH_3, INPUT_PULLUP);
     xmcPulseSwitch3.interval(100);
-    xmcPulseSwitch3.attach(XMC_SWITCH_F3);
+    xmcPulseSwitch3.attach(XMC_SWITCH_3);
 
-    pinMode(XMC_SWITCH_F4, INPUT_PULLUP);
+    pinMode(XMC_SWITCH_4, INPUT_PULLUP);
     xmcPulseSwitch4.interval(100);
-    xmcPulseSwitch4.attach(XMC_SWITCH_F4);
+    xmcPulseSwitch4.attach(XMC_SWITCH_4);
 
-    pinMode(XMC_SWITCH_F5, INPUT_PULLUP);
+    pinMode(XMC_SWITCH_5, INPUT_PULLUP);
     xmcPulseSwitch5.interval(100);
-    xmcPulseSwitch5.attach(XMC_SWITCH_F5);
+    xmcPulseSwitch5.attach(XMC_SWITCH_5);
 
     /* Run led. */
     pinMode(PB1, OUTPUT);
