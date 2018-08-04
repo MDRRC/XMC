@@ -18,9 +18,11 @@ The user interface is nearly the same as with the WMC application and it's tried
 ## Schematic
 The [schematic](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_schematic.pdf) of the XMC.
 
-## Below the development setup.
+## Below the PCB front and back side.
 
-![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc.jpg)
+![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_fromt.jpg)
+
+![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_back.jpg)
 
 ## Used librarys
  * [XmcApp]() the main state machine of the application.
