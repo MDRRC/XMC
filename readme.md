@@ -12,7 +12,7 @@ The XpressNet Manual Control (Xmc) is manual control for the [XPressnet bus](www
 The user interface is nearly the same as with the WMC application and it's tried to reuse as many as possible library's created for WMC.
 
 ## Tested with
- * [MDRRC-II](http://members.home.nl/robert.evers/mdrrc2.htm) Response ok ...... 
+ * [MDRRC-II](http://members.home.nl/robert.evers/mdrrc2.htm) Response ok. 
  * [Roco MultiMaus as master](https://www.roco.cc/en/product/5215-multimaus-0-0-0-0-0-004001-0/products.html) OK for locs, turnouts not tested yet.
  
 ## Schematic
