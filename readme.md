@@ -27,7 +27,6 @@ The PCB from the front and back.
 ![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_back.jpg)
 
 ## Programming the STM32 (WORK IN PROGRES!!!!!!!!)
-
 The STM32 can be programmed without the need to build the software. By using a programming tool from the STM32 Arduino library the STM32 can be programmed with the buildin bootloader of the STM32 on the USB connection.
  * The [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32) must be present on your PC.
  * Open the DOS box and enter command below (Location of files on your own PC might differ and the COM port will probably also be different, so change it accordingly!!)
