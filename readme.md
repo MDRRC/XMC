@@ -32,7 +32,8 @@ The STM32 can be programmed without the need to build the software. By using a p
  * The bin file is flashed into the STM32.
  * When ready, the screen stays gray for ~3 seconds and subsequent the start screen appears. 
  
-## Used librarys
+## Used library's
+If you want to build the code yourself or update / change the code following library's are required.
  * [XmcApp]() the main state machine of the application.
  * [TinyFsm](https://github.com/digint/tinyfsm) for state machine framework.
  * [XpressNet](https://github.com/MDRRC/XpressNet) for XpressNet protocol.
