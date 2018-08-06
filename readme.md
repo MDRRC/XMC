@@ -15,6 +15,8 @@ The user interface is nearly the same as with the WMC application and it's tried
  * [MDRRC-II](http://members.home.nl/robert.evers/mdrrc2.htm) Response ok. 
  * [Roco MultiMaus as master](https://www.roco.cc/en/product/5215-multimaus-0-0-0-0-0-004001-0/products.html) OK for locs, turnouts not tested yet.
  
+![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_roco.jpg) 
+ 
 ## Schematic
 The [schematic](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_schematic.pdf) of the XMC.
 
