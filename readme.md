@@ -30,7 +30,7 @@ The STM32 can be programmed without the need to build the software. By using a p
  * Open the DOS box and enter command below (Location of files on your own PC might differ and the COM port will probably also be different, so change it accordingly!!)
  > C:/Arduino_STM32-master/tools/win/maple_upload.bat COM9 1 1EAF:0003 C:/LocationOfBinFileOnYourPc/Xmc.bin
  * The bin file is flashed into the STM32.
- * When ready, the screen stays gray for ~3 seconds and subseqeunt the start screen appears. 
+ * When ready, the screen stays gray for ~3 seconds and subsequent the start screen appears. 
  
 ## Used librarys
  * [XmcApp]() the main state machine of the application.
