@@ -36,7 +36,7 @@ The STM32 can be programmed without the need to build the software. By using a p
  
 ## Used library's
 If you want to build the code yourself or update / change the code following library's are required.
- * [XmcApp]() the main state machine of the application.
+ * [XmcApp](https://github.com/MDRRC/XmcApp) the main state machine of the application.
  * [TinyFsm](https://github.com/digint/tinyfsm) for state machine framework.
  * [XpressNet](https://github.com/MDRRC/XpressNet) for XpressNet protocol.
  * [Bounce2](https://github.com/thomasfredericks/Bounce2) for debouncing switches.
