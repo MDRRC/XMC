@@ -22,7 +22,7 @@ The [schematic](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_schematic.pdf) 
 
 ## PCB front and back side.
 The PCB from the front and back. 
-![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_fromt.jpg)
+![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_front_1.jpg)
 
 ![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_back.jpg)
 
@@ -55,9 +55,9 @@ void Bounce::attach(int pin, int mode)
 }
 ```
  * [Adafruit-ST7735-Library](https://github.com/adafruit/Adafruit-ST7735-Library) to control the display.
- * [WmcTft](https://github.com/MDRRC/WmcTft) for graphics within the Wmc application.
+ * [WmcTft](https://github.com/MDRRC/WmcTft) for graphics within the XMC application.
  * [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) for graphic control of the display.
- * [LocLib](https://github.com/MDRRC/LocLib) for handling locomotive data within the Wmc application.
+ * [LocLib](https://github.com/MDRRC/LocLib) for handling locomotive data within the XMC application.
  * [WmcCv](https://github.com/MDRRC/WmcCv) for changing CV's.
  * [WmcCli](https://github.com/MDRRC/WmcCli) for the command line interface over the USB serial port.
  * [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32) 
