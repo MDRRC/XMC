@@ -26,13 +26,19 @@ The PCB from the front and back.
 
 ![](https://github.com/MDRRC/XMC/blob/master/Doc/xmc_pcb_back.jpg)
 
-## Programming the STM32 (WORK IN PROGRES!!!!!!!!)
+## Programming the STM32 
 The STM32 can be programmed without the need to build the software. By using a programming tool from the STM32 Arduino library the STM32 can be programmed with the buildin bootloader of the STM32 on the USB connection.
  * The [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32) must be present on your PC.
  * Open the DOS box and enter command below (Location of files on your own PC might differ and the COM port will probably also be different, so change it accordingly!!)
  > C:/Arduino_STM32-master/tools/win/maple_upload.bat COM9 1 1EAF:0003 C:/LocationOfBinFileOnYourPc/Xmc.bin
  * The bin file is flashed into the STM32.
- * When ready, the screen stays gray for ~3 seconds and subsequent the start screen appears. 
+ * When ready, the screen stays gray for ~3 seconds and subsequent the start screen appears.
+ 
+## Programming the STM32 with FLASHER-STM32
+The STM32 can also be programmed with [Flasher-STM32](https://www.st.com/en/development-tools/flasher-stm32.html)
+ * Follow instructions of chapter 5. Software update of [MDRRC-II Lite](https://github.com/MDRRC/Doc/blob/master/mdrrc_ii_lite.zip)
+ * Select the xmc.bin and flash the file.
+ * When ready press RESet button, the screen stays gray for ~3 seconds and subsequent the start screen appears.   
  
 ## Used library's
 If you want to build the code yourself or update / change the code following library's are required.
