@@ -36,6 +36,7 @@ The STM32 can be programmed without the need to build the software. By using a p
  
 ## Programming the STM32 with FLASHER-STM32
 The STM32 can also be programmed with [Flasher-STM32](https://www.st.com/en/development-tools/flasher-stm32.html)
+ * Connect a USB serial to TTL level (!) adapter to RX1 and TX1 (pin 25 and 26). The USB connector can NOT be used!!! 
  * Follow instructions of chapter 5. Software update of [MDRRC-II Lite](https://github.com/MDRRC/Doc/blob/master/mdrrc_ii_lite.zip)
  * Select the xmc.bin and flash the file.
  * When ready press RESet button, the screen stays gray for ~3 seconds and subsequent the start screen appears.   
