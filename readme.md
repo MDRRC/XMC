@@ -74,5 +74,3 @@ void Bounce::attach(int pin, int mode)
  * Remove or rename ..\Arduino_STM32-master\STM32F1\system\libmaple\usart_private.h so it's NOT build 
  
  Both files are in [XpressNet](https://github.com/MDRRC/XpressNet)
-
-More info will follow soon!    
