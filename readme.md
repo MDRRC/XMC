@@ -68,9 +68,11 @@ void Bounce::attach(int pin, int mode)
  * [WmcCv](https://github.com/MDRRC/WmcCv) for changing CV's.
  * [WmcCli](https://github.com/MDRRC/WmcCli) for the command line interface over the USB serial port.
  * [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32) 
+ 
  In the Stm32 Arduino library
  * Remove or rename ..\Arduino_STM32-master\STM32F1\cores\maple\libmaple\usart.c so it's NOT build 
  * Remove or rename ..\Arduino_STM32-master\STM32F1\system\libmaple\usart_private.h so it's NOT build 
+ 
  Both files are in [XpressNet](https://github.com/MDRRC/XpressNet)
 
 More info will follow soon!    
