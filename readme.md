@@ -36,9 +36,9 @@ The STM32 can be programmed without the need to build the software. By using a p
  
 ## Programming the STM32 with FLASHER-STM32
 The STM32 can also be programmed with [Flasher-STM32](https://www.st.com/en/development-tools/flasher-stm32.html)
- * Connect an USB serial to TTL level (!) adapter to RX1 and TX1 (pin 25 and 26). The USB connector can NOT be used!!! 
- * Connect an USB cable to the USB connector of the STM32 module so it has supply voltage when programming the STM32 out out the XMC PCB. 
+ * Connect an USB serial to TTL level (!) adapter to RX1 and TX1 (pin 25 and 26). The USB connector can NOT be used in this case for programmming!!! 
  * Connect the BOOT1 pin to ground when programming the STM32 out out the XMC PCB. 
+ * Connect an USB cable to the USB connector of the STM32 module so it has supply voltage when programming the STM32 out out the XMC PCB. 
  * Follow instructions of chapter 5. Software update of [MDRRC-II Lite](https://github.com/MDRRC/Doc/blob/master/mdrrc_ii_lite.zip)
  * Select the XmcComplete.bin and flash the file. The bin file is WITH bootloader! 
  * When ready press RESet button, the screen stays gray for ~3 seconds and subsequent the start screen appears.   
