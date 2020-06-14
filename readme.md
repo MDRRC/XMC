@@ -40,7 +40,7 @@ The STM32 can also be programmed with [Flasher-STM32](https://www.st.com/en/deve
  * Connect an USB cable to the USB connector of the STM32 module so it has supply voltage when programming the STM32 out out the XMC PCB. 
  * Connect the BOOT1 pin to ground when programming the STM32 out out the XMC PCB. 
  * Follow instructions of chapter 5. Software update of [MDRRC-II Lite](https://github.com/MDRRC/Doc/blob/master/mdrrc_ii_lite.zip)
- * Select the xmc.bin and flash the file.
+ * Select the XmcComplete.bin and flash the file. The bin file is WITH bootloader! 
  * When ready press RESet button, the screen stays gray for ~3 seconds and subsequent the start screen appears.   
  
 ## Used library's
