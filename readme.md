@@ -5,7 +5,7 @@ The XpressNet Manual Control (Xmc) is manual control for the [XPressnet bus](www
  * An [Maple Mini STM32 board](https://www.leaflabs.com/maple/) variant from China
  * RS485 driver IC
  * AT24C256 memory IC for storage of settings and locomotive data.
- * 128*128 pixel ST7735 LCD. 
+ * 128*128 pixel ST7735 LCD. When ordering a display make sure the pinning is the same as shown in ![this picture.](https://github.com/MDRRC/XMC/blob/master/Doc/display.JPG)
  * Push buttons for controlling functions / accesory decoders / menu related actions. 
  * Pulse switch for setting speed / menu related actions.
  
