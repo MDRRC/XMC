@@ -69,10 +69,11 @@ void Bounce::attach(int pin, int mode)
  * [LocLib](https://github.com/MDRRC/LocLib) for handling locomotive data within the XMC application.
  * [WmcCv](https://github.com/MDRRC/WmcCv) for changing CV's.
  * [WmcCli](https://github.com/MDRRC/WmcCli) for the command line interface over the USB serial port.
- * [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32) 
+ * [Stm32 Arduino library](https://github.com/rogerclarkmelbourne/Arduino_STM32), use the [1.0.0 release](https://github.com/rogerclarkmelbourne/Arduino_STM32/releases/tag/v1.0.0)! The most recent version at the master may give problems because of some changes.  
  
  In the Stm32 Arduino library
- * Remove or rename (.x for example) ..\Arduino_STM32-master\STM32F1\cores\maple\libmaple\usart.c so it's NOT build 
+ * Remove or rename (.x for example) ..\Arduino_STM32-master\STM32F1\cores\maple\libmaple\usart.c so it's NOT build
+ * Remove or rename (.x for example) ..\Arduino_STM32-master\STM32F1\cores\maple\libmaple\usart_f1.c so it's NOT build 
  * Remove or rename (.x for example) ..\Arduino_STM32-master\STM32F1\system\libmaple\usart_private.h so it's NOT build 
  
- Both files are in [XpressNet](https://github.com/MDRRC/XpressNet)
+ The three files are in [XpressNet](https://github.com/MDRRC/XpressNet) and are required for correct handling of 9 bit communication handling.
