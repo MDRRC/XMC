@@ -2,7 +2,7 @@
 
 The XpressNet Manual Control (Xmc) is manual control for the [XPressnet bus](www.lenzusa.com/1newsite1/Manuals/xpressnet.pdf) based on 
 
- * An [Maple Mini STM32 board](https://www.leaflabs.com/maple/) variant from China
+ * An [Maple Mini STM32 board](https://www.leaflabs.com/maple/) variant from China with **128K flash** memory and not the 64K variant!
  * RS485 driver IC
  * AT24C256 memory IC for storage of settings and locomotive data.
  * 128*128 pixel ST7735 LCD. When ordering a display make sure the pinning is the same as shown in image below![](https://github.com/MDRRC/XMC/blob/master/Doc/display.JPG)
